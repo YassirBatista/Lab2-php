@@ -18,7 +18,9 @@
 
         <section class="contenedor-logo">
             <hr class="linea-gruesa">
-            <img src="assets/images/fiec.png" alt="Logo FIEC" title="Logo de la Fiec" class="logo-fiec">
+            <a href="https://www.up.ac.pa/">
+                <img src="assets/images/fiec.png" alt="Logo FIEC" title="Logo de la Fiec" class="logo-fiec">
+            </a>
             <hr class="linea-gruesa">
         </section>
 
@@ -109,7 +111,9 @@
                 <tr>
                     <td colspan="4" class="celda-video">
                         <p>Video de las bases del desarrollo web</p>
+                        <!--
                         <iframe class="video" width="480" height="270" src="https://www.youtube-nocookie.com/embed/TQPtgHVjMlo" frameborder="0" allowfullscreen></iframe>
+                        -->
                         <iframe class="video" width="480" height="270" src="https://www.youtube-nocookie.com/embed/rWfditAgAfA" frameborder="0" allowfullscreen></iframe></td>
                 </tr>
 

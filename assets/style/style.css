@@ -3,6 +3,7 @@
     src: url("../fonts/FiraCodeNerdFont-Regular.ttf") format("truetype");
 }
 
+/* Pagina */
 body {
     background-color: #1a1a2e;
     font-family: "FiraCode", monospace;
@@ -12,7 +13,7 @@ body {
     margin: 0;
 }
 
-/*Hoja*/
+/* Hoja blanca */
 .hoja {
     background-color: white;
     width: 800px;
@@ -22,40 +23,41 @@ body {
     color: black;
 }
 
-/*Encabezados*/
+/* Encabezado */
 .encabezado-inst {
     text-align: center;
-    line-height: 1.3; 
+    line-height: 1.3;
 }
 .encabezado-inst h1 {
     font-size: 1.4rem;
     text-transform: uppercase;
-    margin: 0 0 5px 0; 
+    margin: 0 0 5px 0;
 }
-.encabezado-inst h2, .encabezado-inst h3, .encabezado-inst h4 { 
+.encabezado-inst h2,
+.encabezado-inst h3,
+.encabezado-inst h4 {
     margin: 5px 0;
     font-size: 1.1rem;
 }
 
+/* Logo */
 .contenedor-logo {
-    text-align: center; 
+    text-align: center;
 }
-
-.linea-gruesa {border: 1.5px solid black;
+.linea-gruesa {
+    border: 1.5px solid black;
     margin: 10px 0;
 }
-
-/*Imagen*/
-.logo-fiec { 
-    width: 120px; 
-    padding: 10px; 
-    cursor: help; 
+.logo-fiec {
+    width: 120px;
+    padding: 10px;
+    cursor: help;
 }
-
 .logo-fiec:hover {
     transform: scale(1.10);
 }
 
+/* Tabla */
 .tabla-proforma {
     width: 100%;
     border-collapse: collapse;
@@ -68,7 +70,6 @@ body {
     font-size: 0.95rem;
     vertical-align: middle;
 }
-
 .gris-claro {
     background-color: #eeeeee;
     text-align: center;
@@ -76,9 +77,14 @@ body {
     color: #c0392b;
 }
 
-.full { width: 90%; box-sizing: border-box; }
-
-.celda-textarea { vertical-align: top; }
+/* Inputs */
+.full {
+    width: 90%;
+    box-sizing: border-box;
+}
+.celda-textarea {
+    vertical-align: top;
+}
 .celda-textarea textarea {
     width: 95%;
     height: 90px;
@@ -87,9 +93,13 @@ body {
     border: 1px solid #999;
     padding: 4px;
 }
+select {
+    padding: 4px;
+    border: 1px solid #999;
+    width: 100%;
+}
 
-.centro { text-align: center; }
-
+/* Marquee */
 .celda-movimiento {
     font-weight: bold;
     text-align: center;
@@ -98,7 +108,7 @@ body {
     padding: 8px;
 }
 
-/*Video*/
+/* Videos */
 .celda-video {
     text-align: center;
     padding: 20px;
@@ -107,7 +117,10 @@ body {
     transform: scale(1.10);
 }
 
-/*Botones*/
+/* Botones */
+.centro {
+    text-align: center;
+}
 .btn {
     padding: 8px 35px;
     background-color: #fff;
@@ -120,7 +133,7 @@ body {
     background-color: #f0f0f0;
 }
 
-/*footer*/
+/* Footer */
 .pie-firma {
     text-align: center;
     margin-top: 20px;
@@ -128,10 +141,4 @@ body {
     padding-top: 10px;
     font-weight: bold;
     font-size: 0.9rem;
-}
-
-select {
-    padding: 4px;
-    border: 1px solid #999;
-    width: 100%;
 }
