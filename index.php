@@ -18,18 +18,36 @@
 
         <section class="contenedor-logo">
             <hr class="linea-gruesa">
-            <a href="https://www.up.ac.pa/">
-                <img src="assets/images/fiec.png" alt="Logo FIEC" title="Logo de la Fiec" class="logo-fiec">
-            </a>
+            <div class="logos">
+                <div class="logo-item">
+                    <a href="https://www.up.ac.pa/" target="_blank">
+                        <img src="assets/images/uni.png" alt="Logo Universidad de Panamá" title="Universidad de Panamá" class="logo-fiec">
+                        <span>Universidad de Panamá</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://fiec.up.ac.pa/" target="_blank">
+                        <img src="assets/images/fiec.png" alt="Logo FIEC" title="Logo de la FIEC" class="logo-fiec">
+                        <span>Facultad de Informática</span>
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://github.com/YassirBatista" target="_blank">
+                        <img src="assets/images/github.png" alt="GitHub Yassir Batista" title="GitHub de Yassir" class="logo-fiec">
+                        <span>GitHub Yassir Batista</span>
+                    </a>
+                </div>
+            </div>
             <hr class="linea-gruesa">
         </section>
 
         <form action="procesar.php" method="POST">
             <table class="tabla-proforma">
+
                 <!-- Area de login -->
-                <tr>
-                    <td colspan="2">Nombre Usuario: <input type="text" name="usuario"></td>
-                    <td colspan="2">Password: <input type="password" name="pass"></td>
+                <tr class="fila-login">
+                    <td colspan="2">Nombre Usuario: <input type="text" name="usuario" placeholder="usuario123"></td>
+                    <td colspan="2">Password: <input type="password" name="pass" placeholder="••••••••"></td>
                 </tr>
 
                 <!-- Encabezado -->
@@ -40,27 +58,27 @@
                 <!-- Datos del Estudiante -->
                 <tr>
                     <td>Nombre Estudiante:</td>
-                    <td><input type="text" name="nombre" class="full"></td>
+                    <td><input type="text" name="nombre" class="full" placeholder="Nombre completo"></td>
                     <td>Cédula de Identidad:</td>
-                    <td><input type="text" name="cedula" class="full"></td>
+                    <td><input type="text" name="cedula" class="full" placeholder="0-000-000"></td>
                 </tr>
                 <tr>
                     <td>Carrera:</td>
-                    <td><input type="text" name="carrera" class="full"></td>
+                    <td><input type="text" name="carrera" class="full" placeholder="Ingeniería Informática"></td>
                     <td>Año que cursa:</td>
-                    <td><input type="text" name="anio" class="full"></td>
+                    <td><input type="text" name="anio" class="full" placeholder="1ro, 2do..."></td>
                 </tr>
 
-                <!-- Seccion del sexo y tipo -->
+                <!-- Sexo y Tipo -->
                 <tr>
                     <td colspan="2">
-                        Sexo: 
-                        Mujer <input type="radio" name="sexo" value="M"> 
+                        Sexo:
+                        Mujer <input type="radio" name="sexo" value="M">
                         Hombre <input type="radio" name="sexo" value="H">
                     </td>
                     <td colspan="2">
-                        Tipo: 
-                        Regular <input type="radio" name="tipo" value="R"> 
+                        Tipo:
+                        Regular <input type="radio" name="tipo" value="R">
                         Irregular <input type="radio" name="tipo" value="I">
                     </td>
                 </tr>
@@ -69,19 +87,19 @@
                 <tr>
                     <td colspan="4" class="celda-movimiento">
                         <marquee behavior="scroll" direction="left">
-                            ←———— USO DE LA ADMINISTRACIÓN ————→
+                            󰮯 󰊠 󰊠 󰊠 󰊠 󰊠 󰊠 USO DE LA ADMINISTRACIÓN 󰮯 󰊠 󰊠 󰊠 󰊠 󰊠 󰊠
                         </marquee>
                     </td>
                 </tr>
 
-                <!-- Encabezado Abajo -->
+                <!-- Encabezado inferior -->
                 <tr class="gris-claro">
                     <td>Tecnologías</td>
                     <td>Asignaturas Matriculadas</td>
                     <td colspan="2">Comentario</td>
                 </tr>
 
-                <!-- Caajas y Selects -->
+                <!-- Selects, Checkboxes y Textarea -->
                 <tr>
                     <td>
                         Lenguaje favorito:<br><br>
@@ -103,30 +121,43 @@
                     </td>
                     <td colspan="2" class="celda-textarea">
                         Comentarios:<br>
-                        <textarea name="comentario"></textarea>
+                        <textarea name="comentario" placeholder="Escribe aquí tus comentarios..."></textarea>
                     </td>
+                </tr>
+
+                <!-- Fecha de nacimiento y correo -->
+                <tr>
+                    <td>Fecha de Nacimiento:</td>
+                    <td><input type="date" name="fecha" class="full"></td>
+                    <td>Correo Electrónico:</td>
+                    <td><input type="email" name="correo" class="full" placeholder="correo@ejemplo.com"></td>
                 </tr>
 
                 <!-- Video -->
                 <tr>
                     <td colspan="4" class="celda-video">
                         <p>Video de las bases del desarrollo web</p>
-                        <!--
-                        <iframe class="video" width="480" height="270" src="https://www.youtube-nocookie.com/embed/TQPtgHVjMlo" frameborder="0" allowfullscreen></iframe>
-                        -->
-                        <iframe class="video" width="480" height="270" src="https://www.youtube-nocookie.com/embed/rWfditAgAfA" frameborder="0" allowfullscreen></iframe></td>
+                        <iframe class="video" width="480" height="270"
+                            src="https://www.youtube-nocookie.com/embed/rWfditAgAfA"
+                            frameborder="0" allowfullscreen></iframe>
+                    </td>
                 </tr>
 
                 <!-- Botones -->
                 <tr>
-                    <td colspan="2" class="centro"><button type="submit" class="btn">Enviar</button></td>
-                    <td colspan="2" class="centro"><button type="reset" class="btn">Borrar</button></td>
+                    <td colspan="2" class="centro">
+                        <button type="submit" class="btn btn-enviar">Enviar</button>
+                    </td>
+                    <td colspan="2" class="centro">
+                        <button type="reset" class="btn btn-borrar">Borrar</button>
+                    </td>
                 </tr>
+
             </table>
         </form>
 
         <footer class="pie-firma">
-            Este formulario fue elaborado por: Yassir Batista
+            Este formulario fue elaborado por: Yassir Batista | 8-1027-1753 | Programación Web | 2026
         </footer>
     </div>
 

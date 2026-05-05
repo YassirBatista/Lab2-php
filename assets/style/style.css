@@ -5,7 +5,7 @@
 
 /* Pagina */
 body {
-    background-color: #1a1a2e;
+    background-color: #1e1e2e;
     font-family: "FiraCode", monospace;
     display: flex;
     justify-content: center;
@@ -15,29 +15,35 @@ body {
 
 /* Hoja blanca */
 .hoja {
-    background-color: white;
+    background-color: #ffffff;
     width: 800px;
     padding: 40px;
-    border: 1px solid #000;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    color: black;
+    border: 1px solid #94a3b8;
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    color: #1e293b;
 }
 
 /* Encabezado */
 .encabezado-inst {
     text-align: center;
-    line-height: 1.3;
+    line-height: 1.4;
 }
 .encabezado-inst h1 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
     margin: 0 0 5px 0;
+    color: #1e293b;
 }
-.encabezado-inst h2,
+.encabezado-inst h2 {
+    margin: 5px 0;
+    font-size: 1.1rem;
+    color: #475569;
+}
 .encabezado-inst h3,
 .encabezado-inst h4 {
     margin: 5px 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    color: #64748b;
 }
 
 /* Logo */
@@ -45,13 +51,38 @@ body {
     text-align: center;
 }
 .linea-gruesa {
-    border: 1.5px solid black;
-    margin: 10px 0;
+    border: 1.5px solid #cbd5e1;
+    margin: 15px 0;
 }
+.logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 10px 0;
+}
+.logo-item {
+    text-align: center;
+}
+.logo-item a {
+    text-decoration: none;
+    color: #475569;
+}
+.logo-item span {
+    display: block;
+    font-size: 0.78rem;
+    margin-top: 6px;
+    color: #64748b;
+}
+
+/* Todos los logos al mismo tamaño visual */
 .logo-fiec {
-    width: 120px;
-    padding: 10px;
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 5px;
     cursor: help;
+    transition: transform 0.2s ease;
 }
 .logo-fiec:hover {
     transform: scale(1.10);
@@ -62,19 +93,25 @@ body {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
+    background-color: #f8fafc;
 }
 .tabla-proforma td,
 .tabla-proforma th {
-    border: 1px solid black;
+    border: 1px solid #cbd5e1;
     padding: 10px 12px;
     font-size: 0.95rem;
     vertical-align: middle;
 }
 .gris-claro {
-    background-color: #eeeeee;
+    background-color: #f1f5f9;
     text-align: center;
     font-weight: bold;
-    color: #c0392b;
+    color: #334155;
+}
+
+/* Fila login */
+.fila-login {
+    background-color: #f8fafc;
 }
 
 /* Inputs */
@@ -90,12 +127,12 @@ body {
     height: 90px;
     resize: none;
     margin-top: 5px;
-    border: 1px solid #999;
+    border: 1px solid #cbd5e1;
     padding: 4px;
 }
 select {
     padding: 4px;
-    border: 1px solid #999;
+    border: 1px solid #cbd5e1;
     width: 100%;
 }
 
@@ -103,8 +140,8 @@ select {
 .celda-movimiento {
     font-weight: bold;
     text-align: center;
-    background-color: #fff;
-    color: #2980b9;
+    background-color: #1e293b;
+    color: #e2e8f0;
     padding: 8px;
 }
 
@@ -112,9 +149,10 @@ select {
 .celda-video {
     text-align: center;
     padding: 20px;
+    background-color: #f8fafc;
 }
 .video:hover {
-    transform: scale(1.10);
+    transform: scale(1.05);
 }
 
 /* Botones */
@@ -123,22 +161,32 @@ select {
 }
 .btn {
     padding: 8px 35px;
-    background-color: #fff;
-    border: 1px solid black;
+    border: none;
     cursor: pointer;
     font-weight: bold;
     font-size: 0.95rem;
+    color: white;
+    transition: background-color 0.2s ease;
 }
-.btn:hover {
-    background-color: #f0f0f0;
+.btn-enviar {
+    background-color: #334155;
+}
+.btn-enviar:hover {
+    background-color: #475569;
+}
+.btn-borrar {
+    background-color: #7f1d1d;
+}
+.btn-borrar:hover {
+    background-color: #991b1b;
 }
 
 /* Footer */
 .pie-firma {
     text-align: center;
     margin-top: 20px;
-    border-top: 1px solid black;
+    border-top: 1.5px solid #cbd5e1;
     padding-top: 10px;
-    font-weight: bold;
     font-size: 0.9rem;
+    color: #64748b;
 }
